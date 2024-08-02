@@ -1,0 +1,56 @@
+.NavBar{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+.NavBar .leftSide{
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 100px;
+}
+
+.NavBar .leftSide img{
+    width: 70px;
+}
+
+.NavBar .rightSide{
+    flex: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.NavBar a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+}
+
+.NavBar .rightSide button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.NavBar .rightSide svg{
+    font-size: 40px;
+}
+
+
+@media only screen and (min-width:600px){
+    .navbar .rightSide button{
+        display: none;
+    }
+
+    .hiddenLinks{
+        display: none;
+    }
+}
